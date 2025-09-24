@@ -73,4 +73,46 @@ def predict(X, weights, threshold=0.5):
 z = np.dot(X, weights)
 h = sigmoid(z)
 return (h>= threshold).astype(int)
+
+
+# Main executetion
+if __name__ == "__main__":
+  # Load data
+   X, y = load_iris_data()
+
+  # Use only petal length and petal width for visualization (indices 2 and 3)
+  X_vis = X[:, [2, 3]] # Petal length, Petal width
+  X_vis = standardize(X_vis) #Standize for better convergence
+
+ # Hyperparameters
+learning_rate = 0.1 
+iterations = 1000
+
+# Train the model
+weights, cost_history = gradient_descent(X_vis , y, weights, learning_rate, interations)
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       
