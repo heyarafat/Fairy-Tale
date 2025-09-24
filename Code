@@ -2,5 +2,10 @@
 
 # Cost function (
 
+import numpy as np
+import matplotlib.pyplot  as plt
 
+#sigmoid function
+def sigmoid(Z):
+return 1/(1 + np.exp(-Z))
  
