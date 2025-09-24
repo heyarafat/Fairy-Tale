@@ -1,14 +1,10 @@
-#Happy'spart
-
 import numpy as np
 import matplotlib.pyplot  as plt
 
-#sigmoid function
+# sigmoid function
 def sigmoid(Z):
     return 1/(1 + np.exp(-Z))
 
-
-#osama
 
 # Cost function (Binary Cross-Entropy Loss)
 def compute_cost(X, y, weights):
@@ -19,8 +15,6 @@ def compute_cost(X, y, weights):
     cost = - (1/m) * np.sum(y * np.log(h) + (1 - y) * np.log(1 - h))
     return cost
 
-
-#rakib
 
 #Load iris data(using provided snippet)
 def load_iris_data():
@@ -40,9 +34,6 @@ def load_iris_data():
     #Target: 0 = Setosa, 1 = Non-Setosa
     y = np.array([0,0,0,0,0,1,1,1,1,1])
     return X,y
-
-
-#shakir
 
 # standardize features
 def standardize(X):
