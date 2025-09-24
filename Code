@@ -1,7 +1,6 @@
-import numpy as np 
+#osama
 
-import matplotlib.pyplot as pyplot
+# Cost function (
 
-#sigmoid function
 
-def sigmoid(z) 
+ 
