@@ -92,7 +92,6 @@ iterations = 1000
 weights, cost_history = gradient_descent(X_vis , y, weights, learning_rate, interations)
 
 
-
 #Plot cost history
 plt.figure(figsize=(10, 5))
 plt.subplot(1, 2, 1)
@@ -101,8 +100,6 @@ plt.title("Cost History")
 plt.xlabel("Iterations")
 plt.ylabel("Cost")
 
-
-
 # Plot data and dicision boundery
-
+plt.subplot(1, 2, 2)
 
