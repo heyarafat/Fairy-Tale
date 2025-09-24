@@ -67,5 +67,10 @@ for i in range(iterations):
   return weights, cost_history
 
 
-#
+#Prediction Function
+
+def predict(X, weights, threshold=0.5):
+z = np.dot(X, weights)
+h = sigmoid(z)
+return (h>= threshold).astype(int)
       
