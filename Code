@@ -20,3 +20,90 @@ cost = - (1/m) * np.sum(y * np.log(h) + (1 - y) * np.log(1 - h))
 return cost
 
 
+<<<<<<< HEAD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Gradient Descent
+def gradient_descent(x, y, weights, learning_rate, iterations):
+    m = len(y)
+    cost_history = []
+for i in range(iterations):
+    z = np.dot(x, weights)
+    h = sigmoid(z)
+    gradients = (1/m) * np.dot(X.T, (h - y))
+    weights -= learning_rate * gradients
+    cost = compute_cost(x, y, weights)
+    cost_history.append(cost)
+    if 1 % 100 == 0:
+        print(f " Iterations {i} : Cost = {cost}")
+  return weights, cost_history
+
+      
+=======
+
+>>>>>>> 0e484c7fc3a97894154d0b880f5a312d59f06f07
