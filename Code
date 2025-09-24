@@ -8,12 +8,14 @@ def sigmoid(Z):
 return 1/(1 + np.exp(-Z))
 
 
-
-
-
-
-
 #osama
 
-# Cost function (
+# Cost function (Binary Cross-Entropy Loss)
+def compute_cost(X, y, weights):
+m = len(y)
+z = np.dot(X, weights)
+h = sigmoid(z)
+h = np.clip(h, 1e-10, 1 - 1e-10)  # Avoid log(0)
+cost = - (1/m) * np.sum(y * np.log(h) + (1 - y) * np.log(1 - h))
+return cost
 
