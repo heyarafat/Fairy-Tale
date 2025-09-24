@@ -104,6 +104,3 @@ for i in range(iterations):
   return weights, cost_history
 
       
-=======
-
->>>>>>> 0e484c7fc3a97894154d0b880f5a312d59f06f07
