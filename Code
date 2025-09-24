@@ -102,4 +102,18 @@ plt.ylabel("Cost")
 
 # Plot data and dicision boundery
 plt.subplot(1, 2, 2)
+plt.scatter(X_vis[:,1], X_vis[:,2], c=y, cmap='viridis', edgecolor='k')
+plt.title("Iris Data and Decision Boundary")
+plt.xlabel("Petal Length (standardized)")
+plt.ylabel("Petal Width (standardized)")
+
+# Decision boundary: bias + w1*x1 + w2*x2 = 0 => x2 = -(bias + w1*x1)/w2
+x1 = np.linspace(np.min(X_vis[:,1]), np.max(X_vis[:, 1]), 100)
+if weights[2] != 0: 
+ x2 = -(weights[0] + weights[1] * x1) / weights[2]
+plt.plot(x1, x2, 'r--', label='Decision Boundary')
+plt.legend()
+
+plt.tight_layout()
+plt.show()
 
