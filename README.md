@@ -1,4 +1,4 @@
-# Fairy-Tale
+# Logistic-Regression
 #  Iris Logistic Regression Classifier  
 
 This project implements a **logistic regression model from scratch** using NumPy to classify Iris flowers as **Setosa** or **Non-Setosa** based on petal length and petal width. It covers every step of the machine learning workflow, including **data preprocessing, model training with gradient descent, evaluation, and decision boundary visualization**.  
