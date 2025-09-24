@@ -20,13 +20,6 @@ cost = - (1/m) * np.sum(y * np.log(h) + (1 - y) * np.log(1 - h))
 return cost
 
 
-<<<<<<< HEAD
-
-
-
-
-
-
 #rakib
 
 #Load iris data(using provided snippet)
@@ -49,13 +42,6 @@ y = np.array([0,0,0,0,0,1,1,1,1,1])
 return X,y
 
 
-
-
-
-
-
-
-
 #shakir
 
 # standardize features
@@ -63,71 +49,6 @@ def standardize(X):
     mean = np.mean(X, axis=0)
     std = np.std(X, axis=0)
     return (X-mean) / std
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # Gradient Descent
@@ -145,4 +66,6 @@ for i in range(iterations):
         print(f " Iterations {i} : Cost = {cost}")
   return weights, cost_history
 
+
+#
       
