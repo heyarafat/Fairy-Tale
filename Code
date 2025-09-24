@@ -64,7 +64,7 @@ def gradient_descent(x, y, weights, learning_rate, iterations):
         cost_history.append(cost)
         if 1 % 100 == 0:
             print(f"Iterations {i} : Cost = {cost}")
-      return weights, cost_history
+    return weights, cost_history
 
 
 #Prediction Function
